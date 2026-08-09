@@ -1,0 +1,10 @@
+Migration count mismatch due to duplicate records
+Reconciliation data discrepancy found after data transfer
+Source and traget count differed after migration
+Kafka consumer lag causing delayed processing
+Redis cache performance optimization
+Spring boot microservices deployment to kubernates
+Vector database stores embeddings
+Semantic search uses cosine similarity
+Dog is playing in the garden
+Cat is sleeping on the sofa
