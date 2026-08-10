@@ -1,0 +1,9 @@
+Migration count mismatch occured due to duplicate records being loaded during reconciliation.
+
+The issue was resolved by adding deduplication logic before target ingestion.
+
+Kafka consumer lag delayed message processing during peak hours.
+
+Redis caching reduced API latency by 40%.
+
+Semantic search retrieves documents using embedding similarity.
