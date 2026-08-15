@@ -186,3 +186,28 @@ Downloading websockets-16.1.1-cp313-cp313-win_amd64.whl (180 kB)
 Downloading sniffio-1.3.1-py3-none-any.whl (10 kB)
 Installing collected packages: websockets, tenacity, sniffio, distro, google-genai
 Successfully installed distro-1.9.0 google-genai-2.17.0 sniffio-1.3.1 tenacity-9.1.4 websockets-16.1.1
+
+
+
+python .\src\main.py
+
+Enter your query : Create a JIRA ticket if the production server is down
+
+Step 1 Actions :
+{'type': 'tool_call', 'tool': 'get_server_status', 'arguments': {'system': 'production'}}
+
+Observation :
+{'tool': 'get_server_status', 'result': {'system': 'production', 'status': 'DOWN'}}
+
+Step 2 Actions :
+{'type': 'tool_call', 'tool': 'create_jira_ticket', 'arguments': {'title': 'Production Server Down', 'description': 'The production server is currently down according to the server status check.'}}
+
+Observation :
+{'tool': 'create_jira_ticket', 'result': {'ticket_id': 'JIRA-101', 'description': 'The production server is currently down according to the server status check.', 'title': 'Production Server Down'}}
+
+Step 3 Actions :
+{'type': 'final_answer', 'answer': "The production server status was checked and found to be DOWN. As a result, JIRA ticket JIRA-101 ('Production Server Down') has been successfully created."}
+
+Final Answer :
+
+The production server status was checked and found to be DOWN. As a result, JIRA ticket JIRA-101 ('Production Server Down') has been successfully created
