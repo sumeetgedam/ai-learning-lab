@@ -1,0 +1,20 @@
+[
+    {
+        "query" : "How was migration fixed?",
+        "expected_keywords" : [
+            "deduplication"
+        ]
+    },
+    {
+        "query" : "What caused migration mismatch?",
+        "expected_keywords" : [
+            "duplicate records"
+        ]
+    },
+    {
+        "query" : "How was kafka issue solved?",
+        "expected_keywords" : [
+            "consumer scaling"
+        ]
+    }
+]
